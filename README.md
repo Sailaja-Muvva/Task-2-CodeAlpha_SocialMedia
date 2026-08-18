@@ -65,16 +65,13 @@ CodeAlpha_SocialMedia/
 │
 ├── README.md
 └── .gitignore
-```
-
-> **Note:** `.env` contains the MongoDB connection string and should not be uploaded to GitHub.
 
 ## ⚙️ Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Sailaja-Muvva/Task-2-CodeAlpha_SocialMedia
 ```
 
 ### 2. Open the project folder
