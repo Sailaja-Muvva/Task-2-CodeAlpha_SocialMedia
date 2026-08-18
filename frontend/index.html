@@ -1,0 +1,184 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeAlpha Social Media</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🌐 CodeAlpha Social
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#create-user">Create User</a>
+            <a href="#create">Create Post</a>
+            <a href="#users">Users</a>
+            <a href="#profile">Profile</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+
+        <h1>CodeAlpha Social Media</h1>
+
+        <p>
+            Connect, share and interact with your community
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section
+            id="create-user"
+            class="create-section"
+        >
+
+            <h2>Create User</h2>
+
+            <input
+                type="text"
+                id="userName"
+                placeholder="Enter your name"
+            >
+
+            <input
+                type="text"
+                id="userUsername"
+                placeholder="Enter username"
+            >
+
+            <input
+                type="email"
+                id="userEmail"
+                placeholder="Enter email"
+            >
+
+            <textarea
+                id="userBio"
+                placeholder="Write your bio"
+            ></textarea>
+
+            <input
+                type="text"
+                id="userProfileImage"
+                placeholder="Profile image URL (optional)"
+            >
+
+            <button onclick="createUser()">
+                👤 Create User
+            </button>
+
+        </section>
+
+        <section
+            id="create"
+            class="create-section"
+        >
+
+            <h2>Create a Post</h2>
+
+            <input
+                type="text"
+                id="postUser"
+                placeholder="Enter your User ID"
+            >
+
+            <textarea
+                id="postContent"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <input
+                type="text"
+                id="postImage"
+                placeholder="Image URL (optional)"
+            >
+
+            <button onclick="createPost()">
+                ➕ Create Post
+            </button>
+
+        </section>
+
+        <section class="posts-section">
+
+            <h2>Recent Posts</h2>
+
+            <div id="postsContainer">
+
+                <p class="loading">
+                    Loading posts...
+                </p>
+
+            </div>
+
+        </section>
+        <section
+            id="users"
+            class="users-section"
+        >
+
+            <h2>People</h2>
+
+            <div id="usersContainer">
+
+                <p class="loading">
+                    Loading users...
+                </p>
+
+            </div>
+
+        </section>
+
+        <section
+            id="profile"
+            class="profile-section"
+        >
+
+            <h2>User Profile</h2>
+
+            <div id="profileContainer">
+
+                <p>
+                    Select a user from the People section.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 CodeAlpha Social Media Platform
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
